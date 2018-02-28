@@ -1,0 +1,252 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Lato', sans-serif;
+    margin-top: 10em;
+    
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET CSS END-------RESET CSS END*/
+
+
+
+
+
+
+
+
+ul {
+    display: block;
+    /*Jak daję tu fixed to się psuje. Już jasn, ja to dałem w col, a powinienem dac w row.
+    position: fixed; */
+    letter-spacing: -1em;
+    float: right;
+   
+}
+
+li {
+    display: inline-block;
+    letter-spacing: normal;
+    padding: 1em;
+    text-transform: uppercase;
+    
+}
+
+.container-fluid{
+   
+}
+
+.nav {
+    /* jak daję tu fixed, to navigacja sie przesuwa w lewo jakby miała float: left, a cały poniższy kontent siępod nią chowa*/
+    position: fixed;
+    background-color: black;
+    padding: 2em 4em;
+    z-index: 99999;
+    box-shadow: 0 0.5em 1em grey;
+    /*ten tajemniczy parametr pozwala naprawić nawigację. Update, odkryłem, że chyba za każdym razem jak używam "position", to mogę użyć np. "top" i "left"*/
+    top:0;
+    width: 100%;
+   
+    
+    
+}
+
+.nav a {
+    color: rgb(230,230,230);
+    padding: 10%;
+    border: 1px solid black;
+    text-decoration: none;
+    
+}
+
+.nav a:hover {
+    color: rgb(200,200,200);
+    text-decoration: none;
+    
+    padding: 10%;
+    border: 1px solid white;
+    
+    
+    
+    
+}
+
+.row {
+    position
+}
+
+.nav img {
+    max-height: 5em;
+    margin: -1em;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.col-1 {
+    height: 100%;
+}
+
+.portfolio {
+    margin-top: 6em;
+    padding-bottom: 2em;
+}
+
+.portfolio h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin: 1em;
+}
+
+.portfolio > div > div {
+    
+}
+
+.portfolio > div {
+    background-color: grey;
+    margin: 0 -15px 0 -15px;  
+    padding-bottom: 8em;
+}
+
+.portfolio > div:nth-of-type(1) {
+    padding: 0;
+}
+
+.portfolio img {
+    width: 15em;
+    object-fit: cover;
+    height: 200px;
+    width: 300px;
+    opacity: 0.8;
+
+}
+
+.portfolio img:hover {
+    opacity: 1;
+}
+
+.credits {
+    background-color: black;
+    /*może to muszę dać bezpośrendio do h3 – UP, nie działa, bo text-center trzeba uzyć z klasą "row"*/
+    text-align: center !important;
+    padding: 2em;
+    color: #555;
+}
+
+
+
+.row {
+    padding:  ;
+}
+
+
+.about {
+    padding-right: 10%;
+}
+
+.about img {
+    width: 100%;
+    border: 0.1em solid black;
+    border-radius: 0.3em;
+    
+}
+
+.footer {
+    background-color: gray;
+    padding: 2em;
+}
+
+.footer h3 {
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about h1 {
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+    margin-bottom: 1em;
+}
+
+.about p{
+    line-height: 1.5;
+    padding: 0 15%;
+}
+
+.contact {
+    padding-bottom: 6em;
+    padding-left: 5%;
+}
+
+.contact p {
+    line-height: 1.5;
+    padding: 0 15%;    
+}
+
+.contact h1 {
+    font-size: 3em;
+    font-weight: 900;
+}
+/*pierwszy z elementów o klasie "row", znajdujących się w klasie "contact*/
+.contact > .row:nth-of-type(1) {
+    padding-bottom: 3em;
+} 
+
+.border-top {
+    border-top: 1px solid #707070 !important;
+}
+
+.footer li {
+    float: left;
+    /*tylko kiedy teraz dać clear?*/
+}
+
+.footer ul {
+    float: left;
+    margin-left: -15px;
+}
+
+.footer a {
+    color: #111;
+}
